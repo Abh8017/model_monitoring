@@ -1,0 +1,21 @@
+artifact_path: model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.7.6
+  sklearn:
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 0.22.1
+run_id: 518d62c423c5446dbd17a9afd2358bc6
+signature:
+  inputs: '[{"name": "ssc_p", "type": "double"}, {"name": "hsc_p", "type": "double"},
+    {"name": "degree_p", "type": "double"}, {"name": "etest_p", "type": "double"},
+    {"name": "mba_p", "type": "double"}, {"name": "gender", "type": "long"}, {"name":
+    "ssc_b", "type": "long"}, {"name": "hsc_b", "type": "long"}, {"name": "hsc_s",
+    "type": "long"}, {"name": "degree_t", "type": "long"}, {"name": "workex", "type":
+    "long"}, {"name": "specialisation", "type": "long"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+utc_time_created: '2021-03-14 17:26:43.290822'
